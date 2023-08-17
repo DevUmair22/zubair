@@ -17,14 +17,14 @@ const Why = () => {
 		{
 			title: 'Strengths',
 			icon: <GiFist size="4rem" />,
-			para: 'Medbillmaster demonstrates several strengths that contribute to its ability to provide effective revenue cycle services. Here is a summary of the strengths you mentioned:',
+			para: 'Medbillmaster demonstrates several strengths that contribute to its ability to provide effective revenue cycle services. Here is a summary of strengths ',
 		},
 	]
 	return (
 		<div className="flex flex-wrap border p-16">
 			<div className="w-4/12 px-6">
 				<div class="p-6 bg-[#092A44] border border-gray-200 rounded-lg  shadow text-white  ">
-					<h5 class="mb-3 text-4xl font-bold tracking-tight ">
+					<h5 class="mb-5 text-4xl font-bold tracking-tight ">
 						Why Choose Medbillmaster?
 					</h5>
 
@@ -48,7 +48,7 @@ const Why = () => {
 				{data.map((item) => (
 					<div class="w-56 h-full px-6 bg-white rounded-lg drop-shadow-lg text-center flex-col mx-auto">
 						<div className="mx-auto py-6 flex items-center text-sky-500">
-							{item.icon}
+							<span className="mx-auto">{item.icon}</span>
 						</div>
 						<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">
 							{item.title}

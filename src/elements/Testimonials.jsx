@@ -8,8 +8,9 @@ const Testimonials = () => {
 		infinite: true,
 		slidesToShow: 3, // Show two slides at a time
 		slidesToScroll: 1,
-		autoplay: false,
 		speed: 2000,
+		autoplay: true,
+
 		autoplaySpeed: 2000,
 		cssEase: 'linear',
 	}
@@ -41,7 +42,7 @@ const Testimonials = () => {
 	]
 
 	return (
-		<section className="py-12 bg-gray-50">
+		<section className="pt-12 bg-gray-50">
 			<div className="px-4 mx-auto max-w-7xl">
 				<div className="text-center">
 					<p className="text-lg font-medium text-gray-600 font-pj">
@@ -52,7 +53,7 @@ const Testimonials = () => {
 					</h2>
 				</div>
 				<div className="w-full flex justify-center flex-wrap mx-auto pt-10 ">
-					<Slider {...settings} className=" w-full h-[100vh] ">
+					<Slider {...settings} className=" w-full h-full">
 						{contentBlog.map((item, index) => (
 							<div className="w-4/12 p-4 ">
 								<div className="p-10 bg-white  border-gray-100 border-1 shadow-xl rounded-xl text-center">

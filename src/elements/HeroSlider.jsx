@@ -1,138 +1,113 @@
 import React from 'react'
-
+import Slider from 'react-slick'
 const HeroSlider = () => {
+	const settings = {
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		speed: 2000,
+		autoplay: true,
+		autoplaySpeed: 4000,
+
+		cssEase: 'linear',
+	}
 	return (
 		<div>
-			<div id="default-carousel" class="relative w-full" data-carousel="slide">
-				<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img
-							src="/docs/images/carousel/carousel-1.svg"
-							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-							alt="..."
-						/>
-					</div>
-
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img
-							src="/docs/images/carousel/carousel-2.svg"
-							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-							alt="..."
-						/>
-					</div>
-
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img
-							src="/docs/images/carousel/carousel-3.svg"
-							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-							alt="..."
-						/>
-					</div>
-
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img
-							src="/docs/images/carousel/carousel-4.svg"
-							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-							alt="..."
-						/>
-					</div>
-
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img
-							src="/docs/images/carousel/carousel-5.svg"
-							class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-							alt="..."
-						/>
+			<Slider {...settings}>
+				<div className="bg-hs1 bg-cover flex-col text-left text-white p-24 h-[90vh]">
+					<div className="w-3/5">
+						<h1 className="text-5xl font-medium py-2 text-[#f59e0b]">
+							MEDBILLMASTER
+						</h1>
+						<h2 className="text-5xl font-bold py-2">PATIENT ACCESS SERVICES</h2>
+						<p className="text-2xl font-semibold py-2">
+							This involves activities related to patient registration,
+							insurance verification, scheduling...
+						</p>
+						<div className="flex py-6">
+							{' '}
+							<span className=" rounded-full px-6 text-md font-semibold  py-2 bg-sky-500 text-white ">
+								Learn More
+							</span>
+						</div>
 					</div>
 				</div>
-
-				<div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-					<button
-						type="button"
-						class="w-3 h-3 rounded-full"
-						aria-current="true"
-						aria-label="Slide 1"
-						data-carousel-slide-to="0"
-					></button>
-					<button
-						type="button"
-						class="w-3 h-3 rounded-full"
-						aria-current="false"
-						aria-label="Slide 2"
-						data-carousel-slide-to="1"
-					></button>
-					<button
-						type="button"
-						class="w-3 h-3 rounded-full"
-						aria-current="false"
-						aria-label="Slide 3"
-						data-carousel-slide-to="2"
-					></button>
-					<button
-						type="button"
-						class="w-3 h-3 rounded-full"
-						aria-current="false"
-						aria-label="Slide 4"
-						data-carousel-slide-to="3"
-					></button>
-					<button
-						type="button"
-						class="w-3 h-3 rounded-full"
-						aria-current="false"
-						aria-label="Slide 5"
-						data-carousel-slide-to="4"
-					></button>
+				<div className="bg-hs2 bg-cover flex-col text-left text-white p-24 h-[90vh]">
+					<div className="w-3/5">
+						<h1 className="text-5xl font-medium py-2 text-[#f59e0b]">
+							MEDBILLMASTER
+						</h1>
+						<h2 className="text-5xl font-bold py-2">CODING</h2>
+						<p className="text-2xl font-semibold py-2">
+							Accurate and compliant medical coding is crucial for proper
+							billing and reimbursement.
+						</p>
+						<div className="flex py-6">
+							{' '}
+							<span className=" rounded-full px-6 text-md font-semibold  py-2 bg-sky-500 text-white ">
+								Learn More
+							</span>
+						</div>
+					</div>
 				</div>
-
-				<button
-					type="button"
-					class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-					data-carousel-prev
-				>
-					<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-						<svg
-							class="w-4 h-4 text-white dark:text-gray-800"
-							aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 6 10"
-						>
-							<path
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M5 1 1 5l4 4"
-							/>
-						</svg>
-						<span class="sr-only">Previous</span>
-					</span>
-				</button>
-				<button
-					type="button"
-					class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-					data-carousel-next
-				>
-					<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-						<svg
-							class="w-4 h-4 text-white dark:text-gray-800"
-							aria-hidden="true"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 6 10"
-						>
-							<path
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="m1 9 4-4-4-4"
-							/>
-						</svg>
-						<span class="sr-only">Next</span>
-					</span>
-				</button>
-			</div>
+				<div className="bg-hs3 bg-cover flex-col text-left text-white p-24 h-[90vh]">
+					<div className="w-3/5">
+						<h1 className="text-5xl font-medium py-2 text-[#f59e0b]">
+							MEDBILLMASTER
+						</h1>
+						<h2 className="text-5xl font-bold py-2">CONTRACT MANAGEMENT</h2>
+						<p className="text-2xl font-semibold py-2">
+							This refers to the management of contracts between healthcare
+							providers and payers
+						</p>
+						<div className="flex py-6">
+							{' '}
+							<span className=" rounded-full px-6 text-md font-semibold  py-2 bg-sky-500 text-white ">
+								Learn More
+							</span>
+						</div>
+					</div>
+				</div>
+				<div className="bg-hs4 bg-cover flex-col text-left text-white p-24 h-[90vh]">
+					<div className="w-3/5">
+						<h1 className="text-5xl font-medium py-2 text-[#f59e0b]">
+							MEDBILLMASTER
+						</h1>
+						<h2 className="text-5xl font-bold py-2">HEALTHCARE ANALYTICS</h2>
+						<p className="text-2xl font-semibold py-2">
+							We utilize healthcare analytics to analyze and interpret data
+							related to revenue cycle management...
+						</p>
+						<div className="flex py-6">
+							{' '}
+							<span className=" rounded-full px-6 text-md font-semibold  py-2 bg-sky-500 text-white ">
+								Learn More
+							</span>
+						</div>
+					</div>
+				</div>
+				<div className="bg-hs5 bg-cover flex-col text-left text-white p-24 h-[90vh]">
+					<div className="w-3/5">
+						<h1 className="text-5xl font-medium py-2 text-[#f59e0b]">
+							MEDBILLMASTER
+						</h1>
+						<h2 className="text-5xl font-bold py-2">
+							PROFESSIONAL/ INSTITUTIONAL BILLING
+						</h2>
+						<p className="text-2xl font-semibold py-2">
+							It includes handling of billing processes for both professional
+							services (physicians) and institutional services (hospitals)...
+						</p>
+						<div className="flex py-6">
+							{' '}
+							<span className=" rounded-full px-6 text-md font-semibold  py-2 bg-sky-500 text-white ">
+								Learn More
+							</span>
+						</div>
+					</div>
+				</div>
+			</Slider>
 		</div>
 	)
 }

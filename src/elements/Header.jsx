@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import icons from '../data'
-
+import logo from '../images/logo.png'
 const links = [
 	{ title: ' Home', id: 1 },
 	{ title: 'About Us', id: 2 },
@@ -12,7 +12,7 @@ const links = [
 ]
 const Header = () => {
 	return (
-		<div>
+		<div className="px-16 bg-white border-gray-200 shadow-xl">
 			<div className="flex flex-wrap justify-between mx-auto px-3   py-3 items-center max-w-screen-xl">
 				<div>queries@medbillmaster.com</div>
 				<div>
@@ -23,17 +23,10 @@ const Header = () => {
 					</ul>
 				</div>
 			</div>
-			<nav className="bg-white border-gray-200 shadow-xl">
+			<nav className=" ">
 				<div className="max-w-screen-xl flex flex-row flex-wrap mx-auto justify-between p-2">
-					<a href="https://flowbite.com/" className="flex justify-start">
-						<img
-							src="https://flowbite.com/docs/images/logo.svg"
-							className="h-8 mr-3"
-							alt="Flowbite Logo"
-						/>
-						<span className="self-center text-2xl font-semibold whitespace-nowrap ">
-							Flowbite
-						</span>
+					<a href="medbillmaster.org" className="flex justify-start">
+						<img src={logo} className="h-10 mr-3" alt=" Logo" />
 					</a>
 					<div className="flex flex-wrap ">
 						<div className="flex  md:order-2 ">

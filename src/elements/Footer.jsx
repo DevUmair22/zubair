@@ -1,6 +1,10 @@
 import React from 'react'
+import { BiPhone } from 'react-icons/bi'
+import { FaMobileAlt } from 'react-icons/fa'
 import { TiArrowRight } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
+import icons from '../data'
+
 const Footer = () => {
 	const serviceList = [
 		{ title: 'Patient Access Services', link: '' },
@@ -24,91 +28,80 @@ const Footer = () => {
 		,
 	]
 	return (
-		<footer class="  bg-[#092A44]">
-			<div className="flex flex-wrap bg-gray-100 px-20">
-				<div className="w-4/12"></div>
-				<div className="w-2/12">
-					<h1>Useful Links</h1>
+		<footer class="  bg-[#092A44] ">
+			<div className="flex flex-wrap bg-white px-20 shadow-inner">
+				<div className="w-4/12 py-8 pr-8">
+					<h1 className="py-2 text-3xl font-medium">Medbillmaster</h1>
+					<h4 className="text-sm text-sky-500 font-bold italic pb-4">
+						"Building trust with confidence"
+					</h4>
+					<p className="text-sm py-1">
+						<b>Address 1:</b> 145 West Ostend Street, Suit 600, Baltimore, MD.
+						21230, USA
+					</p>
+					<p className="text-sm py-1">
+						<b>Address 2:</b>Address 2: 30 N Gould St Sheridan, WY 82801, USA
+					</p>
+
+					<div className="py-6 text-sm">
+						<p className="py-1 flex flex-wrap items-center">
+							<BiPhone className="mr-1 text-black" size="1rem" />
+							(Office) 410 415 9697
+						</p>
+						<p className="py-1 flex flex-wrap items-center">
+							<FaMobileAlt className="mr-1 text-black" size="1rem" />
+							(Cell) 410 399 8386
+						</p>
+					</div>
+				</div>
+				<div className="w-2/12 py-8 text-sm">
+					<h1 className="text-[1rem] font-bold py-2 ml-4">Useful Links</h1>
 					<ul>
 						{useful.map((item) => (
 							<Link to={item.link}>
-								<li className="flex">
-									<TiArrowRight size="1rem" />
+								<li className="flex items-center py-2 hover:text-black cursor-pointer decoration-sky-500 hover:underline">
+									<TiArrowRight size="1rem" className="text-sky-500 mr-2" />
 									{item.title}
 								</li>
 							</Link>
 						))}
 					</ul>
 				</div>
-				<div className="w-3/12">
-					<h1>Our Services</h1>
+				<div className="w-3/12 py-8 text-sm">
+					<h1 className="text-[1rem] font-bold py-2 ml-4">Our Services</h1>
 					<ul>
 						{serviceList.map((item) => (
 							<Link to={item.link}>
-								<li className="flex">
-									<TiArrowRight size="1rem" />
+								<li className="hover:text-black cursor-pointer flex items-center py-2 decoration-sky-500 hover:underline">
+									<TiArrowRight size="1rem" className="text-sky-500 mr-2" />
 									{item.title}
 								</li>
 							</Link>
 						))}
 					</ul>
 				</div>
-				<div className="w-3/12">
-					<h1>Email</h1>
-					<p>Queries@medbillmaster.com</p>
-					<h1>Follow Us</h1>
+				<div className="w-3/12 py-8  pl-4">
+					<h1 className="text-md font-bold py-2">Email</h1>
+					<p className="py-2">Queries@medbillmaster.com</p>
+					<h1 className="text-md font-bold py-2">Follow Us</h1>
+					<ul className="flex flex-wrap">
+						{icons.map((item) => (
+							<li className="mr-2 text-2xl bg-sky-500 rounded-xl p-2 text-white ">
+								{item}
+							</li>
+						))}
+					</ul>
 				</div>
 			</div>
 			<div class="mx-auto w-full max-w-screen-xl p-4 py-6  lg:py-8 text-black px-20">
 				<div class="sm:flex sm:items-center sm:justify-between ">
 					<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
 						© 2023{' '}
-						<a href="#" class="hover:underline text-yellow-500">
+						<a href="#" class="hover:underline text-sky-500">
 							MEDBILLMASTER™
 						</a>
 						. All Rights Reserved.
 					</span>
-					<div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-						<a
-							href="#"
-							class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-						>
-							<svg
-								class="w-4 h-4"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="currentColor"
-								viewBox="0 0 8 19"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-							<span class="sr-only">Facebook page</span>
-						</a>
-
-						<a
-							href="#"
-							class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-						>
-							<svg
-								class="w-4 h-4"
-								aria-hidden="true"
-								xmlns="http://www.w3.org/2000/svg"
-								fill="currentColor"
-								viewBox="0 0 20 17"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-							<span class="sr-only">Twitter page</span>
-						</a>
-					</div>
 				</div>
 			</div>
 		</footer>

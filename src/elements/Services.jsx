@@ -7,70 +7,71 @@ import {
 	LiaFileInvoiceDollarSolid,
 } from 'react-icons/lia'
 import TabComponent from '../elements/TabComp'
-const Services = () => {
-	const dataArray = [
-		{
-			icon: (
-				<FiFileText
-					size="4rem"
-					className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
-				/>
-			),
-			title: 'Professional/Institutional Billing',
-			para: 'It includes handling of billing processes for both professional services (physicians) and institutional services (hospitals). This comprises coding, charge capture, claims submission, and follow-up on claims.',
-		},
-		{
-			icon: (
-				<FaWheelchairMove
-					size="4rem"
-					className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
-				/>
-			),
-			title: 'Patient Access Services',
-			para: 'This involves activities related to patient registration, insurance verification, scheduling, and ensuring a smooth patient intake process.',
-		},
-		{
-			icon: (
-				<LiaFileContractSolid
-					size="4rem"
-					className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
-				/>
-			),
-			title: 'Contract Management',
-			para: 'This refers to the management of contracts between healthcare providers and payers, ensuring accurate reimbursement rates, terms, and compliance with contractual obligations.',
-		},
-		{
-			icon: (
-				<BsFillHeartPulseFill
-					size="4rem"
-					className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
-				/>
-			),
-			title: 'Healthcare Analytics',
-			para: 'We utilize healthcare analytics to analyze and interpret data related to revenue cycle management, identifying areas for improvement, optimizing performance, and making informed decisions.',
-		},
-		{
-			icon: (
-				<FaCode
-					size="4rem"
-					className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
-				/>
-			),
-			title: 'Coding',
-			para: 'Accurate and compliant medical coding is crucial for proper billing and reimbursement. Medbillmaster provides coding services which ensure that diagnoses, procedures, and services are appropriately coded for billing purposes.',
-		},
-		{
-			icon: (
-				<LiaFileInvoiceDollarSolid
-					size="4rem"
-					className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
-				/>
-			),
-			title: 'Accounts Receivable and Denial Management',
-			para: 'We manage accounts receivable by monitoring outstanding payments, following up on unpaid claims, and implementing effective denial management strategies to minimize claim denials and improve revenue collection.',
-		},
-	]
 
+export const dataArray = [
+	{
+		icon: (
+			<FiFileText
+				size="4rem"
+				className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
+			/>
+		),
+		title: 'Professional/Institutional Billing',
+		para: 'It includes handling of billing processes for both professional services (physicians) and institutional services (hospitals). This comprises coding, charge capture, claims submission, and follow-up on claims.',
+	},
+	{
+		icon: (
+			<FaWheelchairMove
+				size="4rem"
+				className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
+			/>
+		),
+		title: 'Patient Access Services',
+		para: 'This involves activities related to patient registration, insurance verification, scheduling, and ensuring a smooth patient intake process.',
+	},
+	{
+		icon: (
+			<LiaFileContractSolid
+				size="4rem"
+				className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
+			/>
+		),
+		title: 'Contract Management',
+		para: 'This refers to the management of contracts between healthcare providers and payers, ensuring accurate reimbursement rates, terms, and compliance with contractual obligations.',
+	},
+	{
+		icon: (
+			<BsFillHeartPulseFill
+				size="4rem"
+				className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
+			/>
+		),
+		title: 'Healthcare Analytics',
+		para: 'We utilize healthcare analytics to analyze and interpret data related to revenue cycle management, identifying areas for improvement, optimizing performance, and making informed decisions.',
+	},
+	{
+		icon: (
+			<FaCode
+				size="4rem"
+				className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
+			/>
+		),
+		title: 'Coding',
+		para: 'Accurate and compliant medical coding is crucial for proper billing and reimbursement. Medbillmaster provides coding services which ensure that diagnoses, procedures, and services are appropriately coded for billing purposes.',
+	},
+	{
+		icon: (
+			<LiaFileInvoiceDollarSolid
+				size="4rem"
+				className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
+			/>
+		),
+		title: 'Accounts Receivable and Denial Management',
+		para: 'We manage accounts receivable by monitoring outstanding payments, following up on unpaid claims, and implementing effective denial management strategies to minimize claim denials and improve revenue collection.',
+	},
+]
+
+const Services = () => {
 	return (
 		<div className="flex-col flex-wrap py-8">
 			<div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiPhone } from 'react-icons/bi'
 import { FaMobileAlt } from 'react-icons/fa'
-import icons from '../data'
+import { icons } from '../data'
 import Footer from '../elements/Footer'
 import Header from '../elements/Header'
 

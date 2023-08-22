@@ -3,7 +3,7 @@ import { BiPhone } from 'react-icons/bi'
 import { FaMobileAlt } from 'react-icons/fa'
 import { TiArrowRight } from 'react-icons/ti'
 import { Link } from 'react-router-dom'
-import icons from '../data'
+import { icons } from '../data'
 
 const Footer = () => {
 	const serviceList = [

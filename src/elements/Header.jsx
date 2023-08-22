@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import icons from '../data'
+import { icons } from '../data'
 import logo from '../images/logo.png'
 const links = [
-	{ title: ' Home', id: 1 },
-	{ title: 'About Us', id: 2 },
-	{ title: 'Services', id: 3 },
-	{ title: 'Expertise', id: 4 },
-	{ title: 'Infrastructure', id: 5 },
-	{ title: 'Strengths', id: 6 },
+	{ title: ' Home', id: 1, route: '/' },
+	{ title: 'About Us', id: 2, route: '/about' },
+	{ title: 'Services', id: 3, route: '/services' },
+	{ title: 'Expertise', id: 4, route: '/expertise' },
+	{ title: 'Infrastructure', id: 5, route: '/infrastructure' },
+	{ title: 'Strengths', id: 6, route: '/strengths' },
 ]
 const Header = () => {
 	return (
@@ -30,12 +30,14 @@ const Header = () => {
 					</a>
 					<div className="flex flex-wrap ">
 						<div className="flex  md:order-2 ">
-							<button
-								type="button"
-								className="text-white bg-sky-500 hover:bg-sky-600  focus:outline-none text-md rounded-full font-medium px-5 py-2 text-center "
-							>
-								Get started
-							</button>
+							<Link to="/contact">
+								<button
+									type="button"
+									className="text-white bg-sky-500 hover:bg-sky-600  focus:outline-none text-md rounded-full font-medium px-5 py-2 text-center "
+								>
+									Get started
+								</button>
+							</Link>
 							<button
 								data-collapse-toggle="navbar-cta"
 								type="button"
@@ -66,7 +68,7 @@ const Header = () => {
 								{links.map((link, id) => (
 									<li key={id}>
 										<Link
-											to=""
+											to={link.route}
 											className="block p-6 pl-3 pr-4 text-white border-b-2 border-white border-solid hover:border-b-2 hover:border-blue-500 bg-blue-700 md:bg-transparent md:text-[#2c4964] hover:text-[#092A44] md:p-0 "
 										>
 											{link.title}

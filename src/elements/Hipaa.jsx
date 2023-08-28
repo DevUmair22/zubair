@@ -1,6 +1,8 @@
 import React from 'react'
 import { BiExit, BiSolidCheckShield } from 'react-icons/bi'
 import { BsFingerprint } from 'react-icons/bs'
+import img from '../images/intro.jpg'
+
 const Hipaa = () => {
 	const array = [
 		{
@@ -36,12 +38,12 @@ const Hipaa = () => {
 	]
 
 	return (
-		<div className="flex py-16">
-			<div className="w-5/12 bg-cover bg-hero">
-				{/* <img src={img} minHeight="500px" alt="img" /> */}
+		<div className="flex flex-col sm:flex-row py-16">
+			<div className="w-full sm:w-5/12 bg-cover bg-hero">
+				<img src={img} minHeight="500px" alt="img" />
 			</div>
-			<div className="w-7/12 p-12">
-				<div className="py-6">
+			<div className="w-full sm:w-7/12 p-6 sm:p-12">
+				<div className="py-2 sm:py-6">
 					<h1 className="text-3xl font-bold py-2">HIPAA</h1>
 					<h2 className="text-3xl py-2 font-medium text-gray-700">
 						Compliance
@@ -64,8 +66,8 @@ const Hipaa = () => {
 				<div className="flex-col flex-wrap">
 					{array.map((item) => (
 						<div className="flex flex-wrap py-4 items-center">
-							<div className="w-2/12 h-full pr-6">{item.icon}</div>
-							<div className="w-10/12">
+							<div className="w-3/12 sm:w-2/12 h-full pr-6">{item.icon}</div>
+							<div className="w-9/12 sm:w-10/12 pl-4 sm:pl-0">
 								<h1 className="py-1 text-xl font-bold">{item.title}</h1>
 								<p className="text-sm">{item.para}</p>
 							</div>

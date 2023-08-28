@@ -17,20 +17,19 @@ const Footer = () => {
 	const useful = [
 		{ title: 'Home', link: '' },
 		{ title: 'About Us', link: '' },
-		,
+
 		{ title: 'Services', link: '' },
-		,
+
 		{ title: 'Expertise', link: '' },
-		,
+
 		{ title: 'Infrastructure', link: '' },
-		,
+
 		{ title: 'Strengths', link: '' },
-		,
 	]
 	return (
 		<footer class="  bg-[#092A44] ">
-			<div className="flex flex-wrap bg-white px-20 shadow-inner">
-				<div className="w-4/12 py-8 pr-8">
+			<div className="flex-col flex sm:flex-row flex-wrap bg-white px-8 sm:px-20 shadow-inner">
+				<div className="w-full sm:w-4/12 py-8 pr-8">
 					<h1 className="py-2 text-3xl font-medium">Medbillmaster</h1>
 					<h4 className="text-sm text-sky-500 font-bold italic pb-4">
 						"Building trust with confidence"
@@ -54,7 +53,7 @@ const Footer = () => {
 						</p>
 					</div>
 				</div>
-				<div className="w-2/12 py-8 text-sm">
+				<div className="w-full sm:w-2/12 py-8 text-sm">
 					<h1 className="text-[1rem] font-bold py-2 ml-4">Useful Links</h1>
 					<ul>
 						{useful.map((item) => (
@@ -67,7 +66,7 @@ const Footer = () => {
 						))}
 					</ul>
 				</div>
-				<div className="w-3/12 py-8 text-sm">
+				<div className="w-full sm:w-3/12 py-8 text-sm">
 					<h1 className="text-[1rem] font-bold py-2 ml-4">Our Services</h1>
 					<ul>
 						{serviceList.map((item) => (
@@ -80,7 +79,7 @@ const Footer = () => {
 						))}
 					</ul>
 				</div>
-				<div className="w-3/12 py-8  pl-4">
+				<div className="w-full sm:w-3/12 py-8  pl-4">
 					<h1 className="text-md font-bold py-2">Email</h1>
 					<p className="py-2">Queries@medbillmaster.com</p>
 					<h1 className="text-md font-bold py-2">Follow Us</h1>
@@ -93,9 +92,9 @@ const Footer = () => {
 					</ul>
 				</div>
 			</div>
-			<div class="mx-auto w-full max-w-screen-xl p-4 py-6  lg:py-8 text-black px-20">
-				<div class="sm:flex sm:items-center sm:justify-between ">
-					<span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+			<div class="mx-auto w-full max-w-screen-xl p-4 py-6  sm:py-8 text-black px-6 sm:px-20">
+				<div class="sm:flex sm:items-center sm:justify-center">
+					<span class="text-sm text-center text-gray-400">
 						© 2023{' '}
 						<a href="#" class="hover:underline text-sky-500">
 							MEDBILLMASTER™

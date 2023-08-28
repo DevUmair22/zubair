@@ -123,9 +123,9 @@ const dataArray = [
 
 const Faq = () => {
 	return (
-		<div className="p-16 bg-[#092A44]">
+		<div className="p-4 sm:p-16 bg-[#092A44]">
 			<div>
-				<h1 className="text-4xl underline decoration-sky-400 underline-offset-8 text-center font-bold text-white pb-2">
+				<h1 className="text-3xl sm:text-4xl underline decoration-sky-400 underline-offset-8 text-center font-bold text-white pb-2">
 					Frequently Asked Questions
 				</h1>
 				<p className="py-5 text-white text-lg text-center">
@@ -134,7 +134,7 @@ const Faq = () => {
 					including medical coding eligibility and requirements.
 				</p>
 			</div>
-			<div className="px-32">
+			<div className="px-1 sm:px-32">
 				{dataArray.map((item) => (
 					<div className="rounded-xl">
 						<Accordion className="my-2 bg-white text-[#343a40] divide-y divide-sky-500 divide-dashed ">
@@ -144,7 +144,7 @@ const Faq = () => {
 								id="panel1a-header"
 							>
 								<Typography>
-									<h1 className="font-semibold text-md text-[#343a40] px-4 py-1">
+									<h1 className="font-semibold text-md text-[#343a40] px-0 sm:px-4 py-1">
 										{item.Question}
 									</h1>
 								</Typography>

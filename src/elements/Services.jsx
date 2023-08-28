@@ -16,7 +16,7 @@ export const dataArray = [
 				className="mx-auto rounded-lg p-3 text-[#092A44] bg-white hover:bg-[#092A44] hover:border-[#092A44] hover:text-white"
 			/>
 		),
-		title: 'Professional/Institutional Billing',
+		title: 'Professional/ Institutional Billing',
 		para: 'It includes handling of billing processes for both professional services (physicians) and institutional services (hospitals). This comprises coding, charge capture, claims submission, and follow-up on claims.',
 	},
 	{
@@ -73,12 +73,12 @@ export const dataArray = [
 
 const Services = () => {
 	return (
-		<div className="flex-col flex-wrap py-8">
+		<div className="flex-col flex flex-wrap py-4 sm:py-8">
 			<div>
 				<h1 className="text-4xl underline decoration-sky-400 underline-offset-8 text-center font-bold  text-[#2c4964] py-2">
 					Services
 				</h1>
-				<p className="py-5 px-16 text-black text-center">
+				<p className="py-5 px-6 sm:px-16 text-black text-center">
 					Medbillmaster is focused on all aspects of revenue cycle management
 					which include medical billing, medical coding,
 					professional/institutional billing, contract management, patient
@@ -86,10 +86,10 @@ const Services = () => {
 					management.
 				</p>
 			</div>
-			<div className="flex flex-wrap bg-white px-20 ">
+			<div className="flex-col flex sm:flex-row flex-wrap bg-white px-2 sm:px-20 ">
 				{dataArray.map((item) => (
-					<div className=" p-4 text-center w-4/12  mx-auto text-white">
-						<div className="bg-[#092A44] p-6 h-96 hover:bg-white hover:text-black">
+					<div className=" p-4 text-center w-full sm:w-4/12  mx-auto text-white">
+						<div className="bg-[#092A44] p-6 h-100 sm:h-96 hover:bg-white hover:text-black ">
 							<div className="py-4">{item.icon}</div>
 							<h1 className="text-2xl font-bold text-[#3BA2E2] py-2">
 								{item.title}
@@ -103,7 +103,7 @@ const Services = () => {
 				<h1 className="text-4xl underline decoration-sky-400 underline-offset-8 text-center font-bold  text-[#2c4964] py-10">
 					Allied Services
 				</h1>
-				<div className="flex justify-start items-center ">
+				<div className="flex-col flex flex-wrap sm:flex-row justify-start items-center ">
 					<TabComponent />
 				</div>
 			</div>

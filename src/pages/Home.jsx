@@ -43,7 +43,7 @@ const Home = () => {
 			<HeroSlider />
 			<Why />
 			<Hipaa />
-			<div className="flex justify-center items-center bg-[#f1f7fd] py-16 px-16">
+			<div className="flex-col flex w-full sm:flex-row justify-center items-center bg-[#f1f7fd] py-2 sm:py-16 px-8 sm:px-16">
 				{counterData.map((counter, index) => (
 					<Counter
 						key={index}

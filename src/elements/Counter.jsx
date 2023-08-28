@@ -16,7 +16,7 @@ const Counter = ({ icon, title, targetValue }) => {
 	}, [count, targetValue])
 
 	return (
-		<div className="w-3/12 mx-4 bg-white shadow-md relative">
+		<div className="w-full sm:w-3/12 mx-0 sm:mx-4 bg-white shadow-md relative sm:my-0 my-12 ">
 			<div className="text-center">
 				<div
 					className="bg-[#092A44] text-white rounded-full p-4 inline-block mb-2 relative"

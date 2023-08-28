@@ -33,24 +33,34 @@ const Contact = () => {
 	return (
 		<div>
 			<Header />
-			<div className="p-20 bg-gray-50">
-				<h1 className="text-gray-800 text-4xl font-bold py-4">Contact Us</h1>
-				<div className="flex flex-wrap pl-8">
-					<div className="w-2/5">
-						<h1 className="py-4 text-2xl font-bold">GET IN TOUCH</h1>
-						<div className="  pr-24">
-							<h1 className="text-xl font-bold py-1">Address 1:</h1>
-							<p className="text-md py-1">
+			<div className="p-6 sm:p-20 bg-gray-50 ">
+				<h1 className="text-gray-800 text-3xl sm:text-4xl font-bold py-4 pl-0 sm:pl-8">
+					Contact Us
+				</h1>
+				<div className="flex flex-wrap pl-0 sm:pl-8">
+					<div className="w-full sm:w-2/5">
+						<h1 className="py-1 sm:py-4 text-xl sm:text-2xl font-bold">
+							GET IN TOUCH
+						</h1>
+						<div className="  pr-0 sm:pr-24">
+							<h1 className="text-lg sm:text-xl font-bold pt-2 sm:py-2">
+								Address 1:
+							</h1>
+							<p className="text-sm sm:text-md ">
 								145 West Ostend Street, Suit 600, Baltimore, MD. 21230, USA
 							</p>
-							<h1 className="text-xl font-bold py-1">Address 2:</h1>
-							<p className="text-md py-1">
+							<h1 className="text-lg sm:text-xl font-bold pt-2 sm:py-2">
+								Address 2:
+							</h1>
+							<p className="text-sm sm:text-md ">
 								30 N Gould St Sheridan, WY 82801, USA
 							</p>
-							<h1 className="text-xl font-bold py-2">Email</h1>
-							<p className="text-md">Queries@medbillmaster.com</p>
+							<h1 className="text-lg sm:text-xl font-bold pt-2 sm:py-2">
+								Email
+							</h1>
+							<p className="text-sm sm:text-md">Queries@medbillmaster.com</p>
 							<div className="py-6 text-sm">
-								<h1 className="text-xl font-bold py-2">Phone</h1>
+								<h1 className="text-lg sm:text-xl font-bold py-2">Phone</h1>
 								<p className=" flex flex-wrap items-center">
 									<BiPhone className="mr-1 text-black" size="1rem" />
 									(Office) 410 415 9697
@@ -62,17 +72,19 @@ const Contact = () => {
 							</div>
 						</div>
 
-						<h1 className="text-3xl font-bold py-2">Follow Us</h1>
+						<h1 className="text-xl sm:text-3xl font-bold py-2">Follow Us</h1>
 						<ul className="flex flex-wrap">
 							{icons.map((item) => (
-								<li className="mr-2 text-2xl bg-sky-500 rounded-xl p-2 text-white ">
+								<li className="mr-2 text-lg sm:text-2xl bg-sky-500 rounded-xl p-2 text-white ">
 									{item}
 								</li>
 							))}
 						</ul>
 					</div>
-					<div className="w-3/5 pr-64">
-						<h1 className="py-4 text-2xl font-bold">SEND US A MESSAGE</h1>
+					<div className="w-full sm:w-3/5 pr-2 pt-20 sm:pt-0 sm:pr-64">
+						<h1 className="py-4 text-xl sm:text-2xl font-bold">
+							SEND US A MESSAGE
+						</h1>
 
 						<form ref={form} onSubmit={sendEmail}>
 							<div className="mb-4">

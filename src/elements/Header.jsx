@@ -7,9 +7,9 @@ const links = [
 	{ title: ' Home', id: 1, route: '/' },
 	{ title: 'About Us', id: 2, route: '/about' },
 	{ title: 'Services', id: 3, route: '/services' },
-	{ title: 'Expertise', id: 4, route: '/expertise' },
-	{ title: 'Infrastructure', id: 5, route: '/infrastructure' },
-	{ title: 'Strengths', id: 6, route: '/strengths' },
+	{ title: 'Expertise', id: 4, route: '/details/expertise' },
+	{ title: 'Infrastructure', id: 5, route: '/details/infrastructure' },
+	{ title: 'Strengths', id: 6, route: '/details/strengths' },
 ]
 
 const Header = () => {
@@ -32,16 +32,18 @@ const Header = () => {
 		<div className={`bg-white sticky top-0 z-50 ${menuOpen ? 'w-screen' : ''}`}>
 			{/* Top Bar */}
 			<div
-				className={`px-16 bg-white border border-gray-100 ${
+				className={`flex bg-white border border-gray-100 max-w-full  ${
 					menuOpen ? 'hidden' : ''
 				}`}
 			>
-				<div className="flex justify-between items-center mx-auto max-w-screen-xl p-1">
-					<div className=" sm:block">queries@medbillmaster.com</div>
-					<div className="hidden sm:block">
-						<ul className="flex">
+				<div className="flex justify-around items-center mx-auto p-1 w-full ">
+					<div className=" sm:block w-1/2 text-center">
+						queries@medbillmaster.com
+					</div>
+					<div className="hidden sm:block w-1/2">
+						<ul className="flex justify-center">
 							{icons.map((icon, index) => (
-								<li key={index} className="text-black mx-2">
+								<li key={index} className="text-black mx-2 ">
 									{icon}
 								</li>
 							))}
@@ -51,9 +53,9 @@ const Header = () => {
 			</div>
 
 			{/* Navigation */}
-			<nav className="max-w-screen-xl mx-auto px-0 py-2">
-				<div className="flex items-center justify-between p-2">
-					<a href="https://medbillmaster.org" className="flex items-center">
+			<nav className="max-w-full  px-0 py-2 ">
+				<div className="flex items-center justify-around p-2 mx-auto w-full">
+					<a href="/" className="flex items-center">
 						<img src={logo} className="h-12 mr-3" alt="Logo" />
 					</a>
 					<div className="hidden sm:flex space-x-4 items-center">

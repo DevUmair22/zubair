@@ -38,9 +38,9 @@ const Hipaa = () => {
 	]
 
 	return (
-		<div className="flex flex-col sm:flex-row py-16">
-			<div className="w-full sm:w-5/12 bg-cover bg-hero">
-				<img src={img} minHeight="500px" alt="img" />
+		<div className="flex flex-col sm:flex-row p-16 ">
+			<div className="w-full sm:w-5/12 bg-cover bg-hero rounded-xl">
+				<img src={img} minHeight="500px" alt="img" className="rounded-xl" />
 			</div>
 			<div className="w-full sm:w-7/12 p-6 sm:p-12">
 				<div className="py-2 sm:py-6">

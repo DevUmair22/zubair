@@ -11,30 +11,29 @@ import Header from '../elements/Header'
 import HeroSlider from '../elements/HeroSlider'
 import Hipaa from '../elements/Hipaa'
 import Services from '../elements/Services'
-import Testimonials from '../elements/Testimonials'
 import Why from '../elements/Why'
 
 const Home = () => {
 	const counterData = [
 		{
 			icon: <FaUserDoctor size="1.5rem" />,
-			title: 'Satisfied Clients',
-			targetValue: 150,
+			title: 'Physician with us',
+			targetValue: 26,
 		},
 		{
 			icon: <HiOutlineBuildingOffice2 size="1.5rem" />,
-			title: 'team Members',
-			targetValue: 18,
+			title: 'Team Members',
+			targetValue: 79,
 		},
 		{
 			icon: <BiSolidFlask size="1.5rem" />,
-			title: 'Successful Projects',
-			targetValue: 145,
+			title: 'Collection %',
+			targetValue: '99%',
 		},
 		{
 			icon: <SlBadge size="1.5rem" />,
 			title: 'Satisfaction Rate',
-			targetValue: 99,
+			targetValue: '99%',
 		},
 	]
 	return (
@@ -55,7 +54,7 @@ const Home = () => {
 			</div>
 			<Services />
 			<Faq />
-			<Testimonials />
+			{/* <Testimonials /> */}
 			<Contact />
 			<Footer />
 		</div>

@@ -2,7 +2,6 @@ import React from 'react'
 import { BiVoicemail } from 'react-icons/bi'
 import { MdCall } from 'react-icons/md'
 import { VscLocation } from 'react-icons/vsc'
-import map from '../images/map.png'
 
 const Contact = () => {
 	return (
@@ -12,9 +11,7 @@ const Contact = () => {
 					Contact
 				</h1>
 			</div>
-			<div>
-				<img src={map} width="100%" height="100%" alt="map" />
-			</div>
+
 			<div className="flex-col flex sm:flex-row flex-wrap justify-center py-4 sm:p-16">
 				<div className="flex w-full sm:w-4/12 p-4 ">
 					<div className="w-3/12 sm:w-2/12 pr-4">

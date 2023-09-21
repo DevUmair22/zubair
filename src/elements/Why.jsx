@@ -8,17 +8,17 @@ const Why = () => {
 		{
 			title: 'Expertise',
 			icon: <LiaBuromobelexperte size="4rem" />,
-			para: 'Our team of high caliber professionals is skilled in defining, configuring, and implementing streamlined processes to improve efficiency, customer service, and quality...',
+			para: 'Our team at MBCS boasts a wealth of expertise in medical billing and coding. With years of industry experience, our experts stay updated with the latest regulations and technologies to ensure precision and efficiency in every task. Your financial success is our priority, and our deep industry knowledge is the key to achieving it.',
 		},
 		{
 			title: 'Infrastructure',
 			icon: <HiOutlineBuildingOffice2 size="4rem" />,
-			para: 'Medbillmaster has a well-built space with excellent IT support and security measures in place. This ensures that the organization can operate smoothly and securely',
+			para: 'MBCS takes pride in its state-of-the-art infrastructure tailored to meet the demands of modern healthcare billing. Our robust systems, secure data handling, and efficient processes are designed to optimize your revenue cycle management. Trust in our infrastructure to deliver seamless solutions for your practice.',
 		},
 		{
 			title: 'Strengths',
 			icon: <GiFist size="4rem" />,
-			para: 'Medbillmaster demonstrates several strengths that contribute to its ability to provide effective revenue cycle services. Here is a summary of strengths ',
+			para: "At MBCS, our strengths lie in our commitment to accuracy, compliance, and client satisfaction. We offer customized solutions that align with your unique needs, allowing you to focus on patient care while we handle the financial intricacies. Our strength is in turning challenges into opportunities for your practice's growth and success. ",
 		},
 	]
 
@@ -27,15 +27,15 @@ const Why = () => {
 			<div className="w-full sm:w-1/2 xl:w-1/3 px-2 sm:px-6 mb-6 sm:mb-0">
 				<div className="p-6 bg-[#092A44] border border-gray-200 rounded-lg shadow text-white">
 					<h5 className="mb-5 text-2xl sm:text-4xl font-bold tracking-tight">
-						Why Choose Medbillmaster?
+						Why Choose MBCS?
 					</h5>
 					<p className="mb-4 font-normal text-justify text-md sm:text-lg">
-						Medbillmaster is a trusted and well-reputed medical billing company
-						with a decent client base. It offers comprehensive and advanced
-						Medical Billing services and solutions to healthcare providers
-						across the United States of America. Our solutions are designed to
-						meet the diverse needs of our clients and provide them with a
-						seamless and technologically advanced billing experience.
+						At MBCS (Medical Billing Consultancy & Solutions), we offer more
+						than just billing services – we provide a pathway to financial
+						success for your medical practice. With our expert team and tailored
+						solutions, we optimize revenue, ensure compliance, and simplify your
+						billing processes. Choose MBCS for precision, profitability, and
+						peace of mind in healthcare billing.
 					</p>
 					<div className="flex py-6">
 						<span className="rounded-full px-6 text-md font-semibold mx-auto py-2 bg-sky-500 text-white">

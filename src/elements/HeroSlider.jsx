@@ -6,33 +6,21 @@ import 'slick-carousel/slick/slick.css'
 const sliderData = [
 	{
 		bgClass: 'bg-hs1',
-		title: 'PATIENT ACCESS SERVICES',
+		title: 'Medical Billing Consultancy & Solutions',
 		description:
-			'This involves activities related to patient registration, insurance verification, scheduling...',
+			'Maximize your revenue with our efficient and accurate medical Coding & billing services',
 	},
 	{
 		bgClass: 'bg-hs2',
-		title: 'CODING',
+		title: 'Medical Billing Consultancy & Solutions',
 		description:
-			'Accurate and compliant medical coding is crucial for proper billing and reimbursement.',
+			'Take the hassle out of medical Coding & billing with our expert team on your side.',
 	},
 	{
 		bgClass: 'bg-hs3',
-		title: 'CONTRACT MANAGEMENT',
+		title: 'Medical Billing Consultancy & Solutions',
 		description:
-			'This refers to the management of contracts between healthcare providers and payers.',
-	},
-	{
-		bgClass: 'bg-hs4',
-		title: 'HEALTHCARE ANALYTICS',
-		description:
-			'We utilize healthcare analytics to analyze and interpret data related to revenue cycle management...',
-	},
-	{
-		bgClass: 'bg-hs5',
-		title: 'PROFESSIONAL/INSTITUTIONAL BILLING',
-		description:
-			'It includes handling of billing processes for both professional services (physicians) and institutional services (hospitals)...',
+			'Unlock Your Full Revenue Potential with the Expertise of Our Medical Coding and Billing Services!',
 	},
 ]
 

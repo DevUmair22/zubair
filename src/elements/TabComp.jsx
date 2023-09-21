@@ -13,19 +13,25 @@ const TabComponent = () => {
 
 	const tabContents = [
 		{
-			heading: 'Provider Credentialing',
+			heading: '	Medical Providers',
 			content: (
 				<div className="flex flex-col-reverse sm:flex-row">
 					<div className="w-full sm:w-9/12 sm:pr-8">
 						<h1 className="text-xl sm:text-2xl py-3 font-semibold text-[#2c4964]">
-							Provider Credentialing
+							Medical Providers
 						</h1>
 						<p className="text-gray-600 text-base sm:text-lg">
-							It assists physicians, practices, hospitals, and other healthcare
-							institutions in the United States with the process of enrolling
-							and credentialing with health insurance plans. This includes
-							verifying provider professional records to ensure accuracy and
-							compliance before enrollment.
+							We are proud to offer comprehensive billing and revenue cycle
+							management services to medical providers. Our team of experienced
+							professionals is dedicated to optimizing billing processes,
+							maximizing revenue, and improving financial performance. From
+							claim submission to payment, we handle every aspect of the revenue
+							cycle with exceptional attention to detail and customer service.
+							We are committed to helping medical providers succeed, and we
+							offer customized solutions to meet the unique needs of each
+							practice. Trust us to handle your billing and revenue cycle
+							management needs and focus on providing top-quality care to your
+							patients.
 						</p>
 					</div>
 					<img
@@ -37,18 +43,25 @@ const TabComponent = () => {
 			),
 		},
 		{
-			heading: 'Eligibility & Benefit Validation',
+			heading: '	Hospitals',
 			content: (
 				<div className="flex flex-col-reverse sm:flex-row">
 					<div className="w-full sm:w-9/12 sm:pr-8">
 						<h1 className="text-xl sm:text-2xl py-3 font-semibold text-[#2c4964]">
-							Eligibility & Benefit Validation
+							Hospitals
 						</h1>
 						<p className="text-gray-600 text-base sm:text-lg">
-							Verifies patients' insurance information and determines coverage
-							details before services are rendered. This helps ensure clean and
-							timely claims, improve cash flow, reduce bad debts, and enables
-							timely follow-up with patients, if necessary.
+							At DRMBS, we are proud to offer comprehensive billing and revenue
+							cycle management services to hospitals. Our team of experienced
+							professionals is dedicated to optimizing billing processes,
+							maximizing revenue, and improving financial performance. From
+							patient registration to payment, we handle every aspect of the
+							revenue cycle with exceptional attention to detail and customer
+							service. Our customizable solutions are designed to meet the
+							unique needs of each hospital, and we are committed to helping our
+							clients succeed. Trust us to handle your billing and revenue cycle
+							management needs and focus on providing top-quality care to your
+							patients.
 						</p>
 					</div>
 					<img
@@ -60,19 +73,25 @@ const TabComponent = () => {
 			),
 		},
 		{
-			heading: 'Authorization/Certification',
+			heading: '	Private Practices',
 			content: (
 				<div className="flex flex-col-reverse sm:flex-row">
 					<div className="w-full sm:w-9/12 sm:pr-8">
 						<h1 className="text-xl sm:text-2xl py-3 font-semibold text-[#2c4964]">
-							Authorization/Certification
+							Private Practices
 						</h1>
 						<p className="text-gray-600 text-base sm:text-lg">
-							Our team coordinates with payers to obtain necessary approvals and
-							pre-certifications for specific procedures or inpatient admissions
-							in accordance with health insurance guidelines. This proactive
-							approach ensures that approvals are obtained well in advance of
-							the scheduled services for the patient.
+							At our company, we are proud to offer comprehensive billing and
+							revenue cycle management services to private practices. Our team
+							of experienced professionals is dedicated to optimizing billing
+							processes, maximizing revenue, and improving financial
+							performance. From patient registration to payment, we handle every
+							aspect of the revenue cycle with exceptional attention to detail
+							and customer service. Our customizable solutions are designed to
+							meet the unique needs of each private practice, and we are
+							committed to helping our clients succeed. Trust us to handle your
+							billing and revenue cycle management needs and focus on providing
+							top-quality care to your patients.
 						</p>
 					</div>
 					<img

@@ -14,28 +14,49 @@ export const detailsData = [
 
    {
       id: 1,
-      title: "Strengths",
-      para: <p >Medbillmaster demonstrates several strengths that contribute to its ability to provide effective revenue cycle management services. Here's a summary of the strengths:<br /><br />
+      title: "Competency",
+      para: < p>At MBCS (Medical Billing Consultancy & Solutions), our strengths are the pillars upon which we build trust, deliver excellence, and stand out as a leading name in the healthcare industry. We take immense pride in our capabilities and attributes that set us apart:<br /><br />
+         <b>  Expertise and Experience:</b>    With years of hands-on experience, our team boasts an exceptional depth of knowledge in medical billing, coding, and revenue cycle management. We understand the intricacies of the healthcare
 
-         <b> Skilled Professionals</b> who are well- equipped to handle end - to - end revenue cycle operations.Their expertise allows for efficient and effective management of the revenue cycle process.<br /><br />
+         landscape and possess the expertise to navigate its challenges seamlessly.<br /><br />
 
-         <b>  Timely Payer and Provider Coordination </b>ensures smooth communication and efficient workflow.This helps to expedite processes and address any issues promptly.<br /><br />
+         <b>  Comprehensive Solutions: </b>MBCS offers comprehensive solutions covering a wide spectrum of healthcare revenue management, including medical billing,
+         coding, credentialing, denial management, and more. Our all-encompassing approach ensures that our clients have a single, reliable source for all their revenue-related needs.<br /><br />
 
-         <b> Eligibility Verification and Payer Approvals</b> system helps us in verifying patient eligibility and obtaining payer approvals well in advance of the date of service.This proactive approach ensures that providers have the necessary authorizations and reduces the likelihood of claim denials.<br /><br />
+         <b> Cutting-Edge Technology:</b> We harness the power of cutting-edge technology to streamline processes, enhance accuracy, and expedite revenue cycles. Our commitment to innovation ensures that our clients benefit from the latest advancements in healthcare billing and management.<br /><br />
 
-         <b> Efficient Productivity and Excellent Quality Services </b>ensure productivity and delivery of services with excellent quality.The efficient processes and attention to detail contribute to streamlined operations and accurate billing.<br /><br />
+         <b> Customized Services: </b>   We recognize that each healthcare provider has unique needs. Therefore, our services are tailored to meet individual requirements, ensuring that our clients receive solutions that align with their specific practice goals and objectives.<br /><br />
 
-         <b> Revenue Cycle Optimization</b> helps providers in decreasing costs and optimizing their revenue cycle.By identifying areas for improvement and implementing effective strategies, we help providers maximize revenue and minimize expenses.<br /><br />
+         <b> Compliance and Security: </b>Adherence to industry regulations, especially HIPAA compliance, is at the core of our operations. We prioritize data security and confidentiality, employing the highest standards of protection to safeguard sensitive healthcare information.<br /><br />
 
-         <b>Error Elimination and Compliance protocols</b> place strong focus on eliminating billing submission errors through verification and follow up processes.This helps avoid penalties, fines, and claim rejections, ensuring compliance with regulatory requirements.<br /><br />
+         <b>Proactive Denial Management:</b>Our proactive approach to denial management minimizes revenue loss and optimizes cash flow. We identify and rectify issues swiftly, ensuring that our clients receive maximum reimbursements.<br /><br />
 
-         <b> Operational Improvement and Financial Control</b> aim to minimize operational flaws and improve financial control for healthcare providers.By implementing efficient processes and effective controls, we help them enhance overall financial management.<br /><br />
+         <b> Transparent Reporting:</b> Transparency is key to our client relationships. We
 
-         <b>   Regular Follow - ups and Cash Flow Optimization </b>reduce claim denials and increase cash flow.This proactive approach helps ensure timely reimbursement and improved financial performance.<br />
+         provide detailed and transparent reports on billing activities, claim statuses, and reimbursements. Our clients are kept well-informed, empowering them to make informed financial decisions.
+         <br /><br />
 
-         These strengths collectively contribute to our ability to provide comprehensive revenue cycle management services and support healthcare providers in optimizing their financial operations.</p>,
+         <b>  Dedicated Support:</b> Our commitment to delivering exceptional service extends to our round-the-clock customer support. We are available 24/7 to address inquiries, offer assistance, and provide solutions promptly.<br /><br />
+
+
+
+         < b >Cost Efficiency:</b >  MBCS understands the financial challenges faced by healthcare providers. Our services are designed to enhance revenue while
+
+         minimizing operational costs, resulting in significant cost savings for our
+         clients.< br /> <br />
+
+         <b>Continuous Learning:</b>  In the ever-evolving healthcare landscape, staying
+         updated is imperative. Our team actively engages in ongoing training and education to keep abreast of changing regulations, payer policies, and industry trends.< br /> <br />
+
+         <b>Client-Centric Approach:</b> We put our clients at the center of everything we do. Our client-centric approach ensures that their unique needs and goals are at the forefront of our service delivery.< br /> <br />
+
+         <b>Proven Track Record:</b>  Our track record of success and the trust placed in us by a diverse client base speak volumes about the quality of our services and
+
+         the results we deliver.< br /> <br /><br /><br /><br />
+
+         MBCS's strengths are a testament to our unwavering commitment to excellence, innovation, and client satisfaction. We continuously strive to raise the bar in healthcare revenue management, and our strengths drive us forward in achieving that goal.</p>,
       img: <img src={strength} height="100%" width="100%" alt="pic" />,
-      route: 'strengths'
+      route: 'competency'
    }, {
       id: 2,
       title: "Infrastructure",

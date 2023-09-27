@@ -9,7 +9,7 @@ const links = [
 	{ title: 'Services', id: 3, route: '/services' },
 	{ title: 'Expertise', id: 4, route: '/details/expertise' },
 	{ title: 'Infrastructure', id: 5, route: '/details/infrastructure' },
-	{ title: 'Strengths', id: 6, route: '/details/strengths' },
+	{ title: 'Competency', id: 6, route: '/details/competency' },
 ]
 
 const Header = () => {

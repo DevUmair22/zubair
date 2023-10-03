@@ -16,7 +16,7 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false)
 
 	const handleScroll = () => {
-		if (window.scrollY > 0) {
+		if (window.scrollY < 0) {
 			setMenuOpen(false)
 		}
 	}

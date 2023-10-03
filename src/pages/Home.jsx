@@ -28,12 +28,12 @@ const Home = () => {
 		{
 			icon: <BiSolidFlask size="1.5rem" />,
 			title: 'Collection %',
-			targetValue: '99%',
+			targetValue: '99',
 		},
 		{
 			icon: <SlBadge size="1.5rem" />,
 			title: 'Satisfaction Rate',
-			targetValue: '99%',
+			targetValue: `99`,
 		},
 	]
 	return (

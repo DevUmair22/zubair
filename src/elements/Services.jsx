@@ -108,7 +108,7 @@ const Services = () => {
 			<div className="flex-col flex sm:flex-row flex-wrap bg-white px-2 sm:px-20 ">
 				{dataArray.map((item) => (
 					<div className=" p-4 text-center w-full sm:w-4/12  mx-auto text-white">
-						<div className="bg-[#092A44] p-6 h-full sm:h-96 hover:bg-white hover:text-black ">
+						<div className="bg-[#092A44] p-6 h-full hover:bg-white hover:text-black ">
 							<div className="py-4">{item.icon}</div>
 							<h1 className="text-2xl font-bold text-[#3BA2E2] py-2">
 								{item.title}
